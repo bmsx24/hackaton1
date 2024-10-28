@@ -1,0 +1,424 @@
+/* CSS RESET*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+h1, h2, h3, h4, h5, h6, a{
+    font-family: "Bebas Neue", sans-serif;
+}
+
+p, a{
+    font-size: 1.3rem;
+    font-family: "Lato", sans-serif;
+}
+/* -----------------HEADER STYLES */
+
+.header-col3-navbar{
+    display: flex;
+    color: #fff;
+    justify-content: space-around;
+    padding: 27px 0;
+}
+.header-col3-navbar li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 0 27px;
+}
+.header-col3-navbar li a:hover{
+    text-decoration: underline;
+}
+
+.container{
+    width: 100%;
+}
+.header{
+    display: flex;
+    width: 100;
+
+}
+.header-col1{
+    background: -webkit-linear-gradient(90deg, #bc109a,#7a289c);/* Chrome 10-25, Safari 5.1-6 */                          background: linear-gradient(90deg, #bc109a,#7a289c);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                                                                  width: 33.3%;              
+}
+.header-logo{
+    width: 70%;
+    display: block;
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+}
+
+.header-col1,
+.header-col2,
+.header-col3{
+    
+}
+
+.header-imgcenter{
+    width: 100%;
+}
+.header-imgjuego{
+    width: 100%;
+}
+.header-col1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.header-col1-logo{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-col2{
+    width: 33.3%;  
+    position: relative;
+}
+
+.header-col3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header-col3-nav{
+    background-image: url(img/bg-nav.jpg);
+    background-size:cover;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-col3-nav p{
+    color: #fff;
+    font-size: 1rem;
+    padding: 16px;
+}
+.header-col3-btn{
+    color: #fff;
+    border: 2px solid #bc109a;
+    padding: 18px 36px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+.btn-bg{
+    background-color: #bc109a;
+}
+.header-col3-btn:hover{
+    background-color: #7a289c ;
+}
+
+.header-col3-shop{
+    background: -webkit-linear-gradient(90deg, #48085b,#232741);/* Chrome 10-25, Safari 5.1-6 */                          background: linear-gradient(90deg, #48085b,#232741);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-col3-link{
+    color: #fff;
+    font-size: 4rem;
+    font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  text-align: center;
+
+}
+
+/* ------------NOSOTROS SECTION */
+
+.nosotros{
+    background: -webkit-linear-gradient(90deg, #bc109a,#7a289c);/* Chrome 10-25, Safari 5.1-6 */                          background: linear-gradient(90deg, #bc109a,#7a289c);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */          
+    height: 400px;
+    text-align: center;
+    padding: 100px;
+    color: #fff;
+}
+.nosotros-header{
+    font-size: 3.5rem;
+    margin-bottom: 18px;
+}
+.nosotros-text{
+    width: 50%;
+    margin: auto;
+    font-size: 1.5rem;
+}
+
+/* SHOP ------------*/
+
+.card-footer{
+    background: -webkit-linear-gradient(90deg, #bc109a,#7a289c);/* Chrome 10-25, Safari 5.1-6 */                          background: linear-gradient(90deg, #bc109a,#7a289c);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */        
+}
+.card-footer button{
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+    width: 100%;
+    display: inline-block;
+    padding: 18px 0;
+
+}
+.card-footer button:hover{
+    border: none;
+    text-decoration: underline;
+    color: #fff;
+}
+.card-title{
+    text-align: center;
+    font-size: 2rem;
+    color: #7a289c;
+}
+
+
+/* SHOPPING------ */
+
+
+
+/* CSS ALERTA Y CARRITO */
+.fixed-button {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-90%);
+    z-index: 1050; 
+    transition: transform 0.3s ease; 
+    background-color: #bc109a;
+    font-size: 1.5rem;
+    font-family: "Bebas Neue", sans-serif;
+  }
+  .fixed-button:hover{
+    background-color: #7a289c;
+  }
+
+  #carrito img {
+    width: 100px; 
+    height: 100px;
+    object-fit: cover; 
+}
+
+ 
+
+
+  /* FOOTER---------- */
+
+  .footer{
+    background: -webkit-linear-gradient(90deg, #48085b,#232741);/* Chrome 10-25, Safari 5.1-6 */                          background: linear-gradient(90deg, #48085b,#232741);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
+    
+    text-align: center;
+    color: #fff;
+    padding: 100px 0 30px;
+}
+.footer h2{
+    font-size: 1.5rem;
+    margin: 18px;
+}
+.footer-logo{
+    width: 10%;
+    margin: 18px 0;
+}
+
+
+/* MOBILE-------------- */
+
+
+@media only screen and (max-width: 1000px) {
+    .header{
+        flex-direction: column;
+    }
+    .header-col1{
+        width: 100%;
+    }
+    .header-col2{
+        width: 100%;
+        display: none;
+    }
+
+
+    .nosotros-text{
+        width: 100%;
+        margin: auto;
+        font-size: 1.2rem;
+    }
+    .header-col3-link{
+        font-size: 2.5rem;
+      font-weight: 400;
+      padding: 50px 0;
+    
+    }
+    .header-col3-nav{
+        padding: 50px 0;
+    }
+    
+
+  }
+
+
+
+
+  /* ------ANIMACIONES---- */
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-55%, 0%);
+    height: 160px;
+    overflow: hidden;
+    font-family: "Lato", sans-serif;
+    font-size: 35px;
+    line-height: 40px;
+    color: #ecf0f1;
+    width: 90%;
+  }
+  .content__container {
+    font-weight: 600;
+    overflow: hidden;
+    height: 40px;
+    padding: 0 40px;
+  }
+  .content__container:before {
+    content: "[";
+    left: 0;
+  }
+  .content__container:after {
+    content: "]";
+    position: absolute;
+    right: 0;
+  }
+  .content__container:after, .content__container:before {
+    position: absolute;
+    top: 0;
+    color: #16a085;
+    font-size: 42px;
+    line-height: 40px;
+    -webkit-animation-name: opacity;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: opacity;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  .content__container__text {
+    display: inline;
+    float: left;
+    margin: 0;
+    font-size: 2.2rem;
+  }
+  .content__container__list {
+    margin-top: 0;
+    padding-left: 110px;
+    text-align: left;
+    list-style: none;
+    -webkit-animation-name: change;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: change;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  }
+  .content__container__list__item {
+    line-height: 40px;
+    margin: 0;
+  }
+  
+  @-webkit-keyframes opacity {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes change {
+    0%, 12.66%, 100% {
+      transform: translate3d(0, 0, 0);
+    }
+    16.66%, 29.32% {
+      transform: translate3d(0, -25%, 0);
+    }
+    33.32%, 45.98% {
+      transform: translate3d(0, -50%, 0);
+    }
+    49.98%, 62.64% {
+      transform: translate3d(0, -75%, 0);
+    }
+    66.64%, 79.3% {
+      transform: translate3d(0, -50%, 0);
+    }
+    83.3%, 95.96% {
+      transform: translate3d(0, -25%, 0);
+    }
+  }
+  @keyframes opacity {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  @keyframes change {
+    0%, 12.66%, 100% {
+      transform: translate3d(0, 0, 0);
+    }
+    16.66%, 29.32% {
+      transform: translate3d(0, -25%, 0);
+    }
+    33.32%, 45.98% {
+      transform: translate3d(0, -50%, 0);
+    }
+    49.98%, 62.64% {
+      transform: translate3d(0, -75%, 0);
+    }
+    66.64%, 79.3% {
+      transform: translate3d(0, -50%, 0);
+    }
+    83.3%, 95.96% {
+      transform: translate3d(0, -25%, 0);
+    }
+  }
